@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishta's Portfolio</title>
+  <link rel="stylesheet" href="fullproject.css" />
+</head>
+<body>
+  <header>
+    <h1>Rahil khan Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#todo">To-Do List</a>
+      <a href="#products">Products</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm rahil khan, a web developer showcasing HTML, CSS, and JavaScript skills through interactive projects.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>✔ Portfolio Website</li>
+      <li>✔ To-Do App with Local Storage</li>
+      <li>✔ Product Listing Page with Filters</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rahil@example.com</p>
+    <p>GitHub: <a href="https://github.com/Sirikhan 123" target="_blank">github.com/Sirikhan</a></p>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Listing Section -->
+  <section id="products">
+    <h2>Product Listing</h2>
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+    </select>
+
+    <label for="sortFilter">Sort by:</label>
+    <select id="sortFilter" onchange="filterProducts()">
+      <option value="default">Default</option>
+      <option value="price">Price</option>
+      <option value="brand">Brand</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div id="productList"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Full Project</p>
+  </footer>
+
+  <script src="fullproject.js"></script>
+</body>
+</html>
